@@ -5,7 +5,7 @@ namespace Blood4A.Models;
 public class DatabaseViewModel
 {
 
-    public Doacoes doacao;
+    public Doacoes doacao { get; set; }
 
     public DatabaseViewModel(Doacoes doacao)
     {
