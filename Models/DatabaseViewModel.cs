@@ -1,15 +1,8 @@
-using Blood4A.Data;
+using Blood4A.Domain;
 
 namespace Blood4A.Models;
 
-public class DatabaseViewModel
+public class DatabaseViewModel(Doacoes Doacao)
 {
-
-    public Doacoes doacao { get; set; }
-
-    public DatabaseViewModel(Doacoes doacao)
-    {
-        this.doacao = doacao;
-    }
-
+    public Doacoes Doacao { get; set; } = Doacao;
 }

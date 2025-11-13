@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Blood4A.Data;
+using Blood4A.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,21 +1,22 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Blood4A.Models;
+
+namespace Blood4A.Domain;
 
 public class Doadores
 {
     [System.ComponentModel.DataAnnotations.Key]
     public int id_doador { get; set; }
 
-    public required string Nome_Doador { get; set; }
+    public required string nome_doador { get; set; }
 
-    public required string Data_Nascimento_Doador { get; set; }
+    public required string data_nascimento_doador { get; set; }
 
-    public required string Cpf_Doador { get; set; }
+    public required string cpf_doador { get; set; }
 
-    public required string Telefone_Doador { get; set; }
+    public required string telefone_doador { get; set; }
 
-    public required string Tipo_Sanguineo_Doador { get; set; }
+    public required string tipo_sanguineo_doador { get; set; }
 
     // FK -----------------------------------------------
     public required string cep_location { get; set; }

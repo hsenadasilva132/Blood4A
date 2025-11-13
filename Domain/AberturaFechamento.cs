@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Blood4A.Models;
+
+namespace Blood4A.Domain;
 
 public class AberturaFechamento
 {
@@ -9,11 +10,11 @@ public class AberturaFechamento
     public int referente_a { get; set; }
     // FK -----------------------------------------------   
 
-    public required string Horario_Abertura { get; set; }
+    public required string horario_abertura { get; set; }
 
-    public required string Horario_Fechamento { get; set; }
+    public required string horario_fechamento { get; set; }
 
-    public required string Dia_Da_Semana { get; set; }
+    public required string dia_da_semana { get; set; }
 
     // FK -----------------------------------------------    
     [ForeignKey("referente_a")]

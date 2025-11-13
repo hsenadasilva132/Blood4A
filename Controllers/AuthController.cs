@@ -1,19 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using Blood4A.Models;
 using System.Diagnostics;
 
 namespace Blood4A.Controllers;
 
-public class AuthController : Controller
+public class AuthController(ILogger<AuthController> logger) : Controller
 {
-
-    private readonly ILogger<AuthController> _logger;
-
-    public AuthController(ILogger<AuthController> logger)
-    {
-        _logger = logger;
-    }
+    private readonly ILogger<AuthController> _logger = logger;
 
     [HttpGet]
     public IActionResult Login()

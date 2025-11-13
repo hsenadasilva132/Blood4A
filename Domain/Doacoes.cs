@@ -1,6 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Blood4A.Models;
+
+namespace Blood4A.Domain;
 
 public class Doacoes
 {
@@ -15,9 +16,9 @@ public class Doacoes
     public required int id_clinica { get; set; }
     // FK -----------------------------------------------
 
-    public required string Data_Doacao { get; set; }
+    public required string data_doacao { get; set; }
 
-    public required string Hora_Doacao { get; set; }
+    public required string hora_doacao { get; set; }
 
     // FK -----------------------------------------------
     [ForeignKey("id_agente")]
